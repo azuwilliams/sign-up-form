@@ -9,33 +9,57 @@
 <body>
     <header class="union-form-header">
         <h1>Purcor Union Signature Form</h1>
+        <p><a href="https://www.teamsters117.org/our_team#public_private_sector_reps" target="_blank">We are represented by Teamsters!</a></p>
         <p><em>Would you like to add your name to the list of your peers in favor of forming a union? </em></p>
         <p><em>You will gain federal protections by signing onto our letter using the form below.</em></p>
+        <a href="https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights/employer-union-rights-and-obligations#:~:text=The%20National%20Labor%20Relations%20Act,and%20conditions%20of%20employment%2C%20or" target="_blank">Click Here for more information</a>
     </header>
     <form action=" " method="get" class="union-form">
         <div class="form-row">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name">
+            <label for="first-name">First Name*</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Joe" required>
         </div>
         <div class="form-row">
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name">
+            <label for="last-name">Last Name*</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Schmoe" required>
         </div>
         <div class="form-row">
             <label for="job-type">Job Classification</label>
             <select name="job-type" id="job-type">
                 <optgroup label="Pest Technicians">
-                    <option>Seattle</option>
-                    <option>Bellevue</option>
-                    <option>Puyallup</option>
-                    <option>Olympia</option>
+                    <option>Seattle Technician</option>
+                    <option>Bellevue Technician</option>
+                    <option>Puyallup Technician</option>
+                    <option>Olympia Technician</option>
                 </optgroup>
                 <optgroup label="Other Staff">
-                    <option>Lawn Technicians</option>
+                    <option>Lawn Technician</option>
                     <option>Brance Office Administrator</option>
                     <option>Outside Sales Professional</option>
                 </optgroup>
             </select>
+        </div>
+        <div class="form-row">
+            <label for="tel">Personal Phone</label>
+            <input type="tel" name="tel" id="tel" placeholder="(***)***-****"/>
+        </div>
+        <div class="form-row">
+            <label for="email">Personal Email</label>
+            <input type="email" name="email" id="email" placeholder="joe.schmoe@example.com">
+        </div>
+        <div class="form-row">
+            <label for="your-why">What's your why?</label>
+            <textarea name="your-why" id="your-why" cols="30" rows="10" placeholder="I want to get paid for drive time!"></textarea>
+            <div class="instructions">Tell us your 'why', aka the reason or reasons you personally would like union representation in the workplace.</div>
+        </div>
+        <div class="form-row">
+            <label for="email-me" class="checkbox-label">
+                <input type="checkbox" name="email-me" id="email-me" value="wants-email">
+                <span>I would like to recieve email updates</span>
+            </label>
+        </div>
+        <div class="form-row">
+            <button>Let's GO!</button>
         </div>
 
     </form>
